@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="JS-APIövningar01.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAACurq6mpqZNTU3v7++ysrLk5OTV1dW4uLhgYGDS0tL4+PjNzc36+vqDg4OXl5dmZmY8PDx0dHSKiorAwMBISEjl5eUaGhrExMQ3NzePj49CQkKhoaFra2vz8/N5eXkpKSlYWFgSEhIjIyObm5swMDAnJycNDQ3tN1RYAAAEiUlEQVR4nO2c13rbMAxGRct7yXsmXkndvv8TNoqnbMpyY4A/y+8/17nAiWgOAGQUEUIIIYQQQgghhBBCCCGEEEIIIYQQQggRpx4n5TE6CD0aTZMSo+NQopKYI7/QoahQWRkTtOHIXBHgKG2ZDA10POIss4KmhQ5ImvKNoKmgI5Kl/XkraNAhydL+uBPso2OS5f4LmhI6JlHufoOh/QxvZ9GUATooSeoWwbAG6R+bITooSWxj1IzQUQlSsQmaNjosQYY2wSU6KkHsnxAdlSQjm2BQCQybYFAbtnnoY9Q6z9TQQYliEZyjYxKldi8YWPKiGvY0GlnWijo6Imn6Wb/BGh2QOJOMYIg54MWVXzOoU/2Ji+EqrFXwzHGUTuLwfoBH4k2yLAWX3A6RaadRikuN1lNDsdt53+z2s9mi3E/ijv+zT3uc7K/my1X1ccj15fXs+s2w0XUU60+oWlK9g9xZpW49DafriKeb8Uu9+pmIu/E2789TPCyXtjePAja97GhtrR7+dUoVJJLHe2HE5fPva9qz5oRvWUyhRlkqd/OFlUmvMa8mlrpTDu9orzONp2P+R5posyO5M8zr7L1YOZp6gsZ8eJDut1U7BZmh/aKdriC+dGqts8gyhArG+oLYtd9arxYHuUt14bcD+kWPt6Iy9JCCLsYoNiX+3Gb0JTpQwXHogrbeNGHAZSlrNVcUdIPGm7ZgGSxoqXUKgz5V5OXJxIDXhrUFJ2hB9dUeXprqKQviMzQDZUN4fb+rLLhAC0YdZUN8T3Rxivs18CXi4rLDS7yh/aJoXxzlK0CPvQd0BT1o5lsrG+Jr3do7GrSf+mLxG+2nWE47gD4ZflHSNcRvSrWT+R707itvaTz4hsqG0ES+E0N0yTDSL6qh/Wwt96EZaif04Uka9QMwPJOovi9N0II51yTl+EAL6ueD8U17TzUXvgD+rol2nxB+mCo26x0AV3/Vj08eFGZaxTG+CPojttUNt2DD6P6NIGnQ3frKSe8UcEpRfaqBj1P9RgV4usaBIfjRmn5xgK8D3bw5+CEabFuU9gHqyAqouHWjuMCVg7X7Tc7AUhou1osDO9TaP3OmaBJMF5+zYZoC6feeujTEDFT1HtoLoPYT7dz+FageKXeGqIuW6vmoE7Dra87mGlwvpuoF2Qt7mKCj23nQUpSbBQMoqF5I/AabddPu906BCjpIfsMTp8rX8Q36Ezo4JuJr+sqXgYFr4QnlqxfwqyWR8hED+6DCiUlxoD/Gi9dbNFOnvrzfqjZOPWg0PaLVmuHHGE1Rmk/xF0suqOzAN2irDAoJDfz7SVnkH8nAN5lmEb8Khb9keYvwOQpZOMxDtL0dfxHYhuRs489KmEGujQh/ATEHqQYNfItwLo8eqNsm1da0/bUBWtfGvYfJD2+/YEpe2XRQug17nJcwH3j6Gzxh3b8l1tV7bf13oF8WKqZ7O1I/H6zdjdt8a9m3nYyV2rVjUpBoqS2vXtQa+pCVeY7xqDkp90fVp77Ieh4vk6RX/X/0CCGEEEIIIYQQQgghhBBCCCGEEEIIIQTDXw1EQTJa684CAAAAAElFTkSuQmCC"
+                        width="25px">
+                        <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Store <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mac <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">iPad <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">iPhone <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Watch <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Vision <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">AirPods <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">TV & Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Entertainment <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accessories <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Support <span class="sr-only">(current)</span></a>
+                    </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="#">
+                  <img src="data:image/png;base64,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"
+                  width="15px">
+                  <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <img src= "data:image/png;base64,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"
+                        width="15px">
+                        <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-sm navbar-light bg-white">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> Pay monthly at 0% APR when you choose to check out with Apple Card Monthly Installments.◊ <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active" style="width: 100%">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/vday-store-seasonalbanner-202501?wid=3840&hei=400&fmt=png-alpha&.v=1737999438042"
+                style="width: 100%; height: 190px;"
+                >
+            </li>
+        </ul>
+        
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto" style="width: 100%; display: flex; justify-content: space-between;">
+                    
+                    <li class="nav-item active" style="
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            position: relative; 
+            left: 7.5%;
+            ">
+            <h1 style="
+            margin: 0;
+            font-size: 45px;"
+            > 
+            <span style="color: red;">Store.</span> <span style="color: gray;">Valentine’s Day gifts made to love.</span><span class="sr-only">(current)</span></h1>
+        </li>
+        
+        <li class="nav-item active" style="
+          display: flex; 
+          flex-direction: column; 
+          text-align: left;
+          position: absolute;
+          left: 76.5%;">
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-chat-specialist-icon-202309_AV1?wid=70&hei=70&fmt=jpeg&qlt=90&.v=1701194050273"
+          width="40px"
+          style="margin-top: 4px;">
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-chat-specialist-icon-202309_AV1?wid=70&hei=70&fmt=jpeg&qlt=90&.v=1701194050273"
+          width="40px"
+          style="margin-top: 20px;">
+        </li>
+        
+        <li class="nav-item active" style="
+          display: flex; 
+          flex-direction: column; 
+          text-align: left;
+          position: absolute;
+          left: 80%;">
+            <label style="margin-top: 0; margin-bottom: 0px; margin-bottom: 0px;">Need shopping help?</label>
+            <a href="error404.com">Ask a specialist</a>
+            
+            <label style="margin-top: 10px; margin-bottom: 0px; margin-bottom: 0px;">Visit an Apple Store</label>
+            <a href="error404.com">Find one near you</a>
+        </li>
+        
+    </ul>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" style="height: 50px;">
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" style="
+          gap: 45px;">
+          <li class="nav-item active" style="text-align: center;">
+              <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-mac-nav-202410?wid=400&hei=260&fmt=png-alpha&.v=1728342368663">
+              <a class="nav-link" href="#">Mac<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_US?wid=400&hei=260&fmt=png-alpha&.v=1723857157128">
+                <a class="nav-link" href="#">iPhone<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=1714168620875">
+                <a class="nav-link" href="#">iPad<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1724165625838">
+                <a class="nav-link" href="#">Apple Watch<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-vision-pro-nav-202401?wid=400&hei=260&fmt=png-alpha&.v=1702403595269">
+                <a class="nav-link" href="#">Apple Vision Pro<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1722974349822">
+                <a class="nav-link" href="#">AirPods<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=1625783380000">
+                <a class="nav-link" href="#">AirTag<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active" style="text-align: center;">
+                <img style="width: 100px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664628458484">
+                <a class="nav-link" href="#">Apple TV 4K<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script src="JS-APIövningar01.js"></script>
+</body>
+</html>
