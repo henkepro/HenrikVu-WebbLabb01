@@ -1,0 +1,43 @@
+.About-us {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+
+.About-us h1,
+.About-us h4,
+.About-us p {
+    color: white; /* Text color for better contrast on dark background */
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    color: rgb(166, 162, 162);
+    margin: 10px;
+    padding: 10px;
+}
+.contactinfo p4,
+.contactinfo p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: black;
+}
+
+html, body {
+    height: 100vh; /* Make the container take up the full height of the viewport */
+    background-image: url(https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg);
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make sure the image doesn't scroll */
+    overflow: hidden; /* Disable scrolling */
+    height: 100%; /* Ensure the body and html take full height */
+}

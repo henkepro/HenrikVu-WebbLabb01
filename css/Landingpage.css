@@ -1,4 +1,63 @@
-.Landingpage h1 {
+.Landingpage {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    padding: 20px; /* Optional padding */
+    padding-top: 50px;
+}
+
+.Landingpage img {
+    width: 60%; /* Make image width 100% */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 60%; /* Ensure the image doesn’t overflow */
+}
+
+.text01 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.text01 h1 {
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.text01 p{
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+/* Make sure the navbar's background spans the entire screen width */
+.navbar {
+    width: 100vw; /* Use the viewport width (full screen) */
+    position: fixed;
+}
+
+/* For the navbar items, center them */
+.navbar-nav.mx-auto {
+    display: flex;
+    justify-content: center; /* Center the items */
+    width: 100%;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: black !important; /* Ensure hover text color is also black */
+}
+
+html, body {
+    height: 100%; /* Ensure the body and html take full height */
+    background-image: url(https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg);
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make sure the image doesn't scroll */
 }

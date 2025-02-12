@@ -1,0 +1,65 @@
+.pizzas-item, .drinks-item, .desserts-item {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.pizzas-item img, .drinks-item img, .desserts-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.pizzas, .drinks, .desserts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.food {
+    display: flex;
+    flex-direction: row;
+    margin: 10px; 
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.productHeaders {
+    display: flex;
+    flex-direction: row;
+    margin: 10px; 
+    padding: 10px;
+    justify-content: space-between; /* Spread the headers across the space */
+}
+
+
+.container-fluid {
+    height: 100%; /* Ensure the body and html take full height */
+    background-image: url(https://wallpapers.com/images/hd/cozy-1920-x-1200-background-2sub5sbsif211yq3.jpg);
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make sure the image doesn't scroll */
+}
+
+.form-inline {
+    width: 30%;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: black;
+}
+
+p, h1, label {
+    color: white;
+}
+
+html, body {
+    background-image: url(https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg);
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make sure the image doesn't scroll */
+}
