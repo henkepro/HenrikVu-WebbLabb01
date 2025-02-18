@@ -13,13 +13,22 @@
 
 .contactinfo {
     display: flex;
-    flex-direction: column;
-    color: rgb(166, 162, 162);
+    flex-direction: row;
     margin: 10px;
     padding: 10px;
 }
-.contactinfo p4,
-.contactinfo p {
+
+.contactinfo01 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: rgb(166, 162, 162);
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.contactinfo01 p4,
+.contactinfo01 p {
     margin: 0px;
     padding: 0px;
 }
@@ -33,11 +42,26 @@
 }
 
 html, body {
-    height: 100vh; /* Make the container take up the full height of the viewport */
-    background-image: url(https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg);
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Make sure the image doesn't scroll */
-    overflow: hidden; /* Disable scrolling */
-    height: 100%; /* Ensure the body and html take full height */
+    height: 100vh;
+    background-image: url("../images/background01.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#mymap{
+    background: url("../images/ezgifaboutus.webp"); 
+    background-size: cover;
+    position: relative;
+    width: 80%;
+    height: 300px;
+}
+#mymap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

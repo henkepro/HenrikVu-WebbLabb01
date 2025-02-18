@@ -56,7 +56,7 @@
 
 html, body {
     height: 100%; /* Ensure the body and html take full height */
-    background-image: url(https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg);
+    background-image: url("../images/background01.avif");
     background-size: cover;
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make sure the image doesn't scroll */
