@@ -1,0 +1,91 @@
+.food {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px;
+    right: 50px;
+    justify-content: space-between;
+}
+
+.pizzas-item, .drinks-item, .desserts-item {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    position: relative;
+}
+
+.pizzas-item p, .drinks-item p, .desserts-item p {
+    align-self: center;
+    font-style: italic;
+}
+
+.pizzas-item p {
+    position: relative;
+    left: 60px;
+}
+
+.drinks-item p {
+    position: relative;
+    left: 5px;
+}
+
+.pizzas-item img, .drinks-item img, .desserts-item img {
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.pizzas-item img {
+    position: absolute;
+    left: 180%;
+}
+
+.drinks-item img {
+    position: absolute;
+    left: 140%;
+}
+
+.desserts-item img {
+    position: absolute;
+    left: 99.9%;
+}
+
+
+.pizzas, .drinks, .desserts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+.productHeaders {
+    display: flex;
+    flex-direction: row;
+    margin: 10px; 
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+.form-inline {
+    width: 30%;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: black;
+}
+
+p, h1, label {
+    color: white;
+}
+
+html, body {
+    background-image: url("../images/background01.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

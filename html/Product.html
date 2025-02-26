@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Best Pizza Trollhättan </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Product.css">
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Landingpage.html" style="color: rgb(47, 10, 181)">Landingpage<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="About-us.html" style="color: rgb(48, 161, 99)">About us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Product.html" style="color: rgb(196, 199, 34)">Product<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="productHeaders">
+        <h1> Pizzas </h1>
+        <h1> Drinks </h1>
+        <h1> Desserts </h1>
+    </div>
+
+    <div class="food">
+        <!-- Pizzas Section -->
+        <div class="pizzas">
+            <div class="pizzas-item">
+                <p> Margharita </p>
+                <img src="../images/margha.jpg">
+            </div>
+
+            <div class="pizzas-item">
+                <p> Kebabpizza </p>
+                <img src="../images/kebab.jpg">
+            </div>
+
+            <div class="pizzas-item">
+                <p> Capricciosa </p>
+                <img src="../images/capri.jpg">
+            </div>
+
+            <div class="pizzas-item">
+                <p> Diavola </p>
+                <img src="../images/diavola.jpg">
+            </div>
+
+            <div class="pizzas-item">
+                <p> Quattro Stagioni </p>
+                <img src="../images/quattro.jpg">
+            </div>
+
+            <div class="pizzas-item">
+                <p> Vegetariana </p>
+                <img src="../images/vegetariana.jpg">
+            </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="drinks">
+            <div class="drinks-item">
+                <p> Coca Cola </p>
+                <img src="../images/cocacola.jpg">
+            </div>
+
+            <div class="drinks-item">
+                <p> Fanta </p>
+                <img src="../images/fanta.jpg">
+            </div>
+
+            <div class="drinks-item">
+                <p> Sprite </p>
+                <img src="../images/sprite.jpg">
+            </div>
+
+            <div class="drinks-item">
+                <p> Lemonade </p>
+                <img src="../images/lemonade.jpg">
+            </div>
+
+            <div class="drinks-item">
+                <p> Water </p>
+                <img src="../images/water.jpg">
+            </div>
+
+            <div class="drinks-item">
+                <p> Iced Tea </p>
+                <img src="../images/icedtea.jpg">
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="desserts">
+            <div class="desserts-item">
+                <p> Tiramisu </p>
+                <img src="../images/tiramisu.jpg">
+            </div>
+
+            <div class="desserts-item">
+                <p> Panna Cotta </p>
+                <img src="../images/pannacotta.jpg">
+            </div>
+
+            <div class="desserts-item">
+                <p> Gelato </p>
+                <img src="../images/gelato.jpg">
+            </div>
+
+            <div class="desserts-item">
+                <p> Cheesecake </p>
+                <img src="../images/cheesecake.jpg">
+            </div>
+
+            <div class="desserts-item">
+                <p> Chocolate Cake </p>
+                <img src="../images/chocolatecake.jpg">
+            </div>
+
+            <div class="desserts-item">
+                <p> Cannoli </p>
+                <img src="../images/canoli.jpg">
+            </div>
+        </div>
+    </div>
+
+    <form class="form-inline" style="margin: 10px; padding: 10px;">
+        <label class="my-1 mr-2" for="pizzaSelect">Choose your order</label>
+        <select class="custom-select my-1 mr-sm-2" id="pizzaSelect">
+            <option selected>Pizzas...</option>
+        </select>
+
+        <select class="custom-select my-1 mr-sm-2" id="drinkSelect">
+            <option selected>Drinks...</option>
+        </select>
+
+        <select class="custom-select my-1 mr-sm-2" id="dessertSelect">
+            <option selected>Desserts...</option>
+        </select>
+
+        <div>
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline">Confirm order</label>
+            </div>
+            <button type="submit" class="btn btn-primary my-1">Proceed</button>
+        </div>
+    </form>
+
+    <script src="../css/Product.js"></script>
+</body>
+
+</html>
