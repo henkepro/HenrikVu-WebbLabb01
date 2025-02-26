@@ -16,6 +16,7 @@
 
 .pizzas-item p, .drinks-item p, .desserts-item p {
     align-self: center;
+    font-style: italic;
 }
 
 .pizzas-item p {

@@ -8,7 +8,8 @@
 .About-us h1,
 .About-us h4,
 .About-us p {
-    color: white; /* Text color for better contrast on dark background */
+    color: white;
+    font-style: italic;
 }
 
 .contactinfo {
@@ -31,6 +32,7 @@
 .contactinfo01 p {
     margin: 0px;
     padding: 0px;
+    font-style: oblique;
 }
 
 .navbar .nav-link {
