@@ -78,8 +78,11 @@
 .navbar .nav-link:hover {
     color: black;
 }
-
-p, h1, label {
+.shoppingcart {
+    color: white;
+    margin: 20px;
+}
+.shoppingcart, p, h1, label {
     color: white;
 }
 
